@@ -1,0 +1,60 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff7e00, #ffe8e8);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#logo{    
+    position: absolute;
+width: 186px;
+height: 174px;
+left: calc(50% - 186px/2);
+top: 109px;
+
+}
+
+#exercicios {
+    appearance: none; 
+    background-color: #ff7e00;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#exercicios:hover {
+    background-color: #ff6600;
+}
+
+#exercicios option {
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}
+
+button {
+    background-color: #ff7e00;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff6600;
+}
