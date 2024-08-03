@@ -14,7 +14,7 @@ CREATE TABLE Exercicios(
 	id int auto_increment primary key,
 	nome varchar(255),
     imagem varchar(255),
-	musculos varchar(255),
+	musculos varchar(255)
 );
 
 CREATE TABLE lojas(
