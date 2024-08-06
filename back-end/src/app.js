@@ -13,6 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use('/uploads', express.static(__dirname + '\\public'));
 app.use('/api', taskRouter);
 app.use('/api', AtvRouter);
 

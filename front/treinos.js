@@ -1,3 +1,5 @@
+getPosts();
+
 let button = document.getElementById("handleSubmit");
 
 button.onclick = async function(event) {
@@ -9,21 +11,9 @@ button.onclick = async function(event) {
     fm.append('description', document.getElementById("description").value);
     fm.append('file', document.getElementById("file").files[0]);
 
-    const plainFormData = Object.fromEntries(fm.entries());
-	const formDataJsonString = JSON.stringify(plainFormData);
-
-    console.log(fm.get('title'))
-    console.log(fm.get('description'))
-    console.log(fm.get('file'))
-    console.log(formDataJsonString)
-
     const response = await fetch('http://localhost:3005/api/store/atv', {
         method: "POST",
-        headers: {
-            "Content-type": "application/json;charset=UTF-8",
-			"Accept": "application/json"
-        },
-        body: formDataJsonString
+        body: fm
     });
 
     let content = await response.json();
@@ -35,3 +25,30 @@ button.onclick = async function(event) {
         alert('Não');
     }
 }
+
+async function getPosts() {
+    const images = 'http://localhost:3005/uploads/';
+
+    const response = await fetch('http://localhost:3005/api/posts', {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    });
+
+    const result = await response.json();
+
+    if(result.success) {
+        let posts = result.data;
+        let postsHtml = document.getElementById('posts');
+
+        posts.map((post) => {
+            let imgHtml = "<div>" +
+            "<span>" + post.title + "</span>" +
+            "<img src=" + images + post.file + " alt='img' height='100' width='100' />" +
+            "</div>"
+            postsHtml.innerHTML = imgHtml;
+        })
+    }   
+}
+

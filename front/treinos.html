@@ -8,7 +8,7 @@
 <body>
     <h2>Formulário</h2>
 
-    <form action="#">
+    <form action="#" enctype="multipart/form-data">
         <label for="fname">Titulo:</label><br>
         <input type="text" id="title" name="title"><br>
         
@@ -16,11 +16,13 @@
         <input type="text" id="description" name="description"><br><br>
 
         <div>
-            <input type="file" id="file">
+            <input type="file" id="file" name="file">
         </div>
 
         <button id="handleSubmit">Enviar</button>
     </form>
+
+    <div id="posts"></div>
 
     <script src="./treinos.js"></script>
 </body>
