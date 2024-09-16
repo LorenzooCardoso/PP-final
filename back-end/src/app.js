@@ -7,7 +7,7 @@ require('dotenv').config();
 const taskRouter = require('./routes/taskRouter');
 const AtvRouter = require('./routes/AtvRouter');
 
-app.set('port', process.env.PORT || 3005);
+app.set('port', process.env.PORT || 3006);
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,3 +18,4 @@ app.use('/api', taskRouter);
 app.use('/api', AtvRouter);
 
 module.exports = app;
+

@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
+    <link rel="stylesheet" href="../login/style.css">
 </head>
 <body>
-    <h2>Formulário</h2>
+    <h2>Cadastre a Atividade</h2>
 
     <form action="#" enctype="multipart/form-data">
         <label for="fname">Titulo:</label><br>
@@ -18,6 +19,15 @@
         <div>
             <input type="file" id="file" name="file">
         </div>
+
+        <select name="musculo" id="musculo" required>
+            <option value="" disabled selected>Selecione seu Treino</option>
+            <option value="1">velocidade</option>
+            <option value="2">resistencia</option>
+            <option value="3">impulso</option>
+            <option value="4">força</option>
+            <option value="5">perda de gordura</option>       
+        </select>
 
         <button id="handleSubmit">Enviar</button>
     </form>

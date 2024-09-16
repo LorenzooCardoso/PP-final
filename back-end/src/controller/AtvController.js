@@ -29,10 +29,11 @@ async function storeAtv(request, response) {
     const params = Array(
         request.body.title,
         request.body.description,
-        request.file.filename        
+        request.file.filename,
+        request.body.musculo        
     );
 
-    const query = "INSERT INTO Exercicios(title, description, file) VALUES (?,?,?)";
+    const query = "INSERT INTO Exercicios(title, description, file, musculo) VALUES (?,?,?,?)";
 
     connection.query(query, params, (err, results) =>{
         console.log(err, results);

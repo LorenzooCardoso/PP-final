@@ -7,3 +7,59 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
+#title{
+    position: absolute;
+    left: 10vW;
+    right: 10vw;
+    top: 10vh;
+    bottom: 15%;
+    justify-content: center;
+
+    text-align:center;
+    font-size:xx-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#descricao{
+    position: absolute;
+    left: 10vW;
+    right:10vw;
+    top: 20vh;
+    bottom: 15%;
+    justify-content: center;
+
+    text-align:center;
+    font-size:x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#image{
+    position:absolute;
+    width: 50vw;
+    height: 25vh;
+    top: 40vh;
+    left: 27vW;
+    align-items: center;
+
+    
+
+}
+
+#buttonsair{
+
+    position:absolute;
+    top: 80vh;
+    left: 10vh;
+    right: 10vh;
+    background: rgba(255, 0, 0, 0.34);
+    border-radius: 20px;
+    border-color: rgba(255, 128, 0, 0);
+    
+    
+    font-family: 'Kavoon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}

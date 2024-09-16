@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* iPhone 13 / 13 Pro - 1 */
+    
+    position: relative;
+    width: 430px;
+    height: 932px;
+    
+    background: linear-gradient(180deg, #f87901 62.5%, #f5ae2b 100%);
+    
+}
+    #criar{
+        /* Component 3 */
+
+          
+        position: relative;
+        left: 20vW;
+        right: 20vw;
+        top: 50vh;
+        bottom: 15%;
+        justify-content: center;
+        width: 60vw;
+        height: 5vh;
+        
+        background: rgba(255, 0, 0, 0.34);
+        border-radius: 20px;
+        border-color: rgba(0, 26, 255, 0);
+        /* Entrar */
+
+
+        font-family: 'Kavoon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+
+        color: #f8cca8;
+
+
+        
+    }
+
+    #entrar{
+        /* Rectangle 4 */
+        
+        position: relative;
+        left: 20vW;
+        right: 20vw;
+        top: 60vh;
+        bottom: 15%;
+        justify-content: center;
+        width: 60vw;
+        height: 5vh;
+        
+        background: rgba(255, 0, 0, 0.34);
+        border-radius: 20px;
+        border-color: rgba(0, 26, 255, 0);
+        /* Entrar */
+
+
+        font-family: 'Kavoon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+
+        color: #f8cca8;
+
+
+        }
+
+    #jatem{
+        position: absolute;
+        left: 10vW;
+        right: 20vw;
+        top: 63vh;
+        bottom: 15%;
+        justify-content: center;
+
+        color: rgb(255, 213, 187);
+        text-align:center;
+        font-size:small;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    #logo{
+        /* Design sem nome (5) 1 */
+        
+        position: absolute;
+    width: 40vw;
+    height: 18vh;
+    left: 30vw;
+    right: 30vw;
+    top: 109px;
+    
+    }

@@ -6,12 +6,14 @@ async function storeTask(request, response) {
     const params = [
         request.body.name,
         request.body.email,
-        request.body.password
+        request.body.password,
+        request.body.funcao
     ];
 
-    const query = "INSERT INTO users_fitpay (name, email, password) VALUES (?, ?, ?)";
-
+      const query = "INSERT INTO users_fitpay (name, email, password, funcao) VALUES (?, ?, ?, ?)";
+    
     connection.query(query, params, (err, results) => {
+        
         if (err) {
             console.log("ola", err)
             response
@@ -36,13 +38,13 @@ async function storeTask(request, response) {
 async function Getlogin(request, response) {    
     const email = Array(request.body.email);
 
-    const query = "SELECT name, email, password FROM users_fitpay WHERE email = ?";
+    const query = "SELECT name, email, password, funcao FROM users_fitpay WHERE email = ?";
 
     connection.query(query, email, (err, results) => {    
         console.log("erro", err)
         if (results.length > 0) {
-            const senha = request.body.senha;
-            const senhaquery = results[0].senha;
+            const senha = request.body.password;
+            const senhaquery = results[0].password;
             
             if (senha === senhaquery){
                 response
