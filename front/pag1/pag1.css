@@ -1,17 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=New+Amsterdam&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #ff7e00, #ffe8e8);
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
+
 
 #logo{    
     position: absolute;
@@ -24,8 +19,8 @@ top: 109px;
 
 #exercicios {
     appearance: none; 
-    background-color: #ff7e00;
-    border: 2px solid white;
+    background-color: #ff8d55;
+    border: 2px solid #ffa38c;
     color: white;
     padding: 10px;
     font-size: 1.2em;
@@ -38,7 +33,7 @@ top: 109px;
 }
 
 #exercicios:hover {
-    background-color: #ff6600;
+    background-color: #f9a53e;
 }
 
 #exercicios option {
@@ -48,8 +43,8 @@ top: 109px;
 }
 
 button {
-    background-color: #ff7e00;
-    border: 2px solid white;
+    background-color: #ff8d55;
+    border: 2px solid #ffc0b9;
     color: white;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -61,4 +56,16 @@ button {
 
 button:hover {
     background-color: #ff6600;
+}
+
+.navbar{
+    background:#f9a53e!important;
+}
+
+.offcanvas-body{
+    background: linear-gradient(to bottom,  #f9a53e,  #ffb390)!important; 
+}
+.offcanvas-header{
+    background:#f9a53e!important; 
+
 }

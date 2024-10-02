@@ -9,19 +9,19 @@ function confirmarEnvio(event) {
     localStorage.setItem('id_treino', value)
     switch(value) {
         case "1":
-            window.location.href = "../pagsexercicios/bracos.html";
+            window.location.href = "../pagsexercicios/velocidade.html";
             break;
         case "2":
-            window.location.href = "./pagsexercicios/costas.html";
+            window.location.href = "../pagsexercicios/resistencia.html";
             break;
         case "3":
-            window.location.href = "./pagsexercicios/peito_abdomen.html";
+            window.location.href = "./pagsexercicios/impulso.html";
             break;
         case "4":
-            window.location.href = "./pagsexercicios/pernas.html";
+            window.location.href = "../pagsexercicios/forca.html";
             break;
         case "5":
-            window.location.href = "./pagsexercicios/cardio.html";
+            window.location.href = "../pagsexercicios/perda.html";
             break;
         default:
             alert("Seleção não encontrada");

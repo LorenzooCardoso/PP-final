@@ -17,10 +17,12 @@ button.onclick = async function() {
     });
   
     const result = await response.json();
+
+    console.log (result);
   
     if (result.success) {
       console.log(result.data)
-      let funcao = result.data.funcao;
+      let funcao = result.data[0].funcao;
       switch(funcao) {
         case "1":
             window.location.href = "../pag1/pag1.html";
@@ -29,7 +31,7 @@ button.onclick = async function() {
             window.location.href = "../cadastro_treinos/treinos.html";
             break;
         // case "3":
-        //     window.location.href = "./pagsexercicios/peito_abdomen.html";
+        //     window.location.href = "./";
         //     break;
         default:
             alert("Seleção não encontrada");

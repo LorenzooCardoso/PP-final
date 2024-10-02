@@ -60,20 +60,26 @@ async function getPosts() {
             document.getElementById('title').innerText = filter[cont].title;
             document.getElementById('descricao').innerText = filter[cont].description;
             cont++;
-
-            if(cont >= qtdImagens) {
-                cont = 0;
+            
+            if(cont < 3){
+                setTimeout(alterarImagem, 5000)
             }
-
-            setTimeout(alterarImagem, 5000)
+            /*if(cont >= qtdImagens) {
+                cont = 0;
+            }*/
+            
         }
-        alterarImagem();
+        setTimeout(alterarImagem, 5000)
 
 
        
     }
 }
 
+let divBotao = document.getElementById("button-container");
+let botao = document.createElement("button");
+botao.setAttribute("onclick","redirecionar()")
+botao.setAttribute("id",)
 
 
 getPosts()

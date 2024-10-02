@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
 
 /* @media  screen and (min-width: 390px) and (max-width: 844px){ */
     
@@ -15,32 +16,28 @@
         width: 430px;
         height: 932px;
         
-        background: linear-gradient(180deg, #f87901 62.5%, #f5ae2b 100%);
-        
     }
     
     #entrar{
         /* Rectangle 4 */
-        
-        position: relative;
-        left: 17vh;
-        right: 40%;
+        position: absolute;
         top: 150vw;
         bottom: 15%;
         justify-content: center;
-        width: 30vw;
-        height: 5vh;
+        width: 40vw;
+        height: 10vh;
         
-        background: rgba(255, 0, 0, 0.34);
-        border-radius: 20px;
+        border: 2px solid #ffc0b9 !important;
+        background: #fd7e3f;
+        border-radius: 12px;
         border-color: rgba(0, 26, 255, 0);
         /* Entrar */
 
 
-        font-family: 'Kavoon';
+        font-family: "Leckerli One", cursive;
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 40px;
         line-height: 25px;
         text-align: center;
 
@@ -60,13 +57,14 @@
         width: 40vw;
         height: 10vh;
         
+        border: 2px solid #ffc0b9 !important;
         background: rgba(255, 0, 0, 0.15);
         border-radius: 20px;
         border-color: rgba(0, 26, 255, 0);
         
         /* Faça o seu cadastro */
-        
-        font-family: 'Kavoon';
+
+        font-family: "Leckerli One", cursive;        
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -84,16 +82,16 @@
     
     position: absolute;
     width: 33vh;
-    left: 8vh;
+
     top: 175vw;
 
-font-family: 'Kavoon';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 30px;
-text-align: center;
-justify-content: center;
+    font-family: "Leckerli One", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
 
 color: #f8cca8;
 
@@ -106,11 +104,10 @@ color: #f8cca8;
     position: absolute;
     width: 16vh;
     height: 50vh;
-    left: 16vh;
     top: 90vw;
     justify-content: center;
     
-    font-family: 'Kavoon';
+    font-family: "Lobster", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -128,11 +125,10 @@ color: #f8cca8;
     position: absolute;
     width: 10vw;
     height: 10vh;
-    left: 20vh;
     top: 110vw;
     justify-content: center;
     
-    font-family: 'Kavoon';
+    font-family: "Lobster", sans-serif;
     font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -153,12 +149,11 @@ color: #f8cca8;
     position: absolute;
     width: 55vw;
     height: 3vh;
-    left: calc(50% - 214px/2);
     top: 100vw;
     justify-content: center;
     
     background: #FFFFFF;
-    border: 2px solid #000000;
+    border: 2px solid #ffc0b9;
     border-radius: 10px;
     
 }
@@ -176,7 +171,7 @@ color: #f8cca8;
     justify-content: center;
     
     background: #FFFFFF;
-    border: 2px solid #000000;
+    border: 2px solid #ffc0b9;
     border-radius: 10px;
     
 }
@@ -185,9 +180,8 @@ color: #f8cca8;
     /* Design sem nome (5) 1 */
     
     position: absolute;
-width: 30vw;
-height: 14vh;
-left: 35%;
+width: 50vw;
+height: 22vh;
 top: 35vw;
 
 }
@@ -198,10 +192,9 @@ top: 35vw;
     position: absolute;
     width: 30vh;
     height: 41px;
-    left: calc(50% - 289px/2 - 0.5px);
     top: 10vw;
     
-    font-family: 'Kavoon';
+    font-family: "Lobster", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -218,7 +211,6 @@ top: 35vw;
     position: absolute;
     width: 30vh;
     height: 41px;
-    left: calc(50% - 273px/2 - 0.5px);
     top: 65vw;
     
     font-family: 'Kavoon';
