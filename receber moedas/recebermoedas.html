@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Moedas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .saldo {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Adicionar Moedas</h1>
+    <div class="saldo">
+        <span id="saldo-moedas">0</span> Moedas
+    </div>
+
+    <button id="botao-moedas" class="btn">Adicionar 5 Moedas</button>
+
+    <script>
+        // Função para obter o saldo atual de moedas do Local Storage
+        function getMoedas() {
+            return parseInt(localStorage.getItem('moedas')) || 0;
+        }
+
+        // Função para atualizar o saldo de moedas no Local Storage
+        function setMoedas(moedas) {
+            localStorage.setItem('moedas', moedas);
+        }
+
+        // Função para atualizar o saldo mostrado na tela
+        function atualizarSaldo() {
+            const saldo = getMoedas();
+            document.getElementById('saldo-moedas').textContent = saldo;
+        }
+
+        // Função para adicionar moedas e esconder o botão
+        function adicionarMoedas() {
+            let saldoAtual = getMoedas();
+            saldoAtual += 5;
+            setMoedas(saldoAtual);
+            atualizarSaldo();
+            document.getElementById('botao-moedas').style.display = 'none';
+        }
+
+        // Inicializa o saldo ao carregar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            atualizarSaldo();
+
+            // Esconde o botão se o usuário já tiver clicado anteriormente
+            if (localStorage.getItem('botaoClicado') === 'true') {
+                document.getElementById('botao-moedas').style.display = 'none';
+            }
+
+            // Adiciona o evento de clique ao botão
+            document.getElementById('botao-moedas').addEventListener('click', () => {
+                adicionarMoedas();
+                localStorage.setItem('botaoClicado', 'true');  // Marca que o botão foi clicado
+            });
+        });
+    </script>
+
+</body>
+</html>

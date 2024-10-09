@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=New+Amsterdam&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#cda{
+    font-family: "Leckerli One", cursive;
+    position: absolute;
+    width: 33vh;
+
+    top: 10vw;
+
+    font-family: "Leckerli One", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+
+color: #f8cca8;
+
+}
+
+#tt{
+    /* Email: */
+    
+    position: absolute;
+    width: 16vh;
+    height: 50vh;
+    top: 90vw;
+    justify-content: center;
+    
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #f8cca8;
+    
+    
+}
+

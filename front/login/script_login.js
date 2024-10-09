@@ -30,9 +30,9 @@ button.onclick = async function() {
         case "2":
             window.location.href = "../cadastro_treinos/treinos.html";
             break;
-        // case "3":
-        //     window.location.href = "./";
-        //     break;
+        case "3":
+            window.location.href = "../loja/loja.html ";
+            break;
         default:
             alert("Seleção não encontrada");
     }

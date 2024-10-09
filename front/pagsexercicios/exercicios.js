@@ -1,3 +1,11 @@
+let botao = document.getElementById("buttonsair");
+botao.style.display = "none";
+
+function redirecionar() {
+    window.location.href = "../pag1/pag1.html";
+}
+
+
 async function getPosts() {
     const images = 'http://localhost:3006/uploads/';
 
@@ -8,14 +16,13 @@ async function getPosts() {
         }
     });
 
+ 
 
     setTimeout(function() {
         document.getElementById('button-container').style.display = 'block';
     }, 10000); 
 
-    function redirecionar() {
-        window.location.href = "pag1.html";
-    }
+ 
 
     // document.getElementById("buttonsair").onclick = function(event) {
     //     // Previne o comportamento padrão do link
@@ -53,6 +60,8 @@ async function getPosts() {
                 "</div>"
             postsHtml.innerHTML = imgHtml;
         })
+        document.getElementById("descricao").style.height="200px";
+        document.getElementById("title").style.height="200px";
 
         const alterarImagem = () => {
             confirm('Finalizar o treino ?');
@@ -60,9 +69,11 @@ async function getPosts() {
             document.getElementById('title').innerText = filter[cont].title;
             document.getElementById('descricao').innerText = filter[cont].description;
             cont++;
-            
-            if(cont < 3){
+            console.log(cont)
+            if(cont < 2){
                 setTimeout(alterarImagem, 5000)
+            }else{
+                botao.style.display = "block"
             }
             /*if(cont >= qtdImagens) {
                 cont = 0;
@@ -71,16 +82,17 @@ async function getPosts() {
         }
         setTimeout(alterarImagem, 5000)
 
-
+        
        
     }
+
+    
 }
 
-let divBotao = document.getElementById("button-container");
-let botao = document.createElement("button");
-botao.setAttribute("onclick","redirecionar()")
-botao.setAttribute("id",)
 
 
-getPosts()
+
+
+
+getPosts();
 

@@ -56,7 +56,7 @@ async function getPosts() {
         filter.map((post) => {
             let imgHtml = "<div>" +
                 "<span>" + post.title + "</span>" +
-                "<span style='color: yellow'>" + post.description + "</span>" +
+                "<span>" + post.description + "</span>" +
                 "<img id='image' src=" + images + post.file + " alt='img' height='100' width='100' />" +
                 "</div>"
             postsHtml.innerHTML = imgHtml;
