@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=New+Amsterdam&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 
 
-#cda{
+#cda {
     font-family: "Leckerli One", cursive;
     position: absolute;
     width: 33vh;
@@ -20,33 +20,95 @@
     font-family: "Leckerli One", cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 300%;
     line-height: 30px;
     text-align: center;
     justify-content: center;
 
-color: #f8cca8;
+    color: #f8cca8;
 
 }
 
-#tt{
+#tt {
     /* Email: */
-    
+
     position: absolute;
     width: 16vh;
-    height: 50vh;
-    top: 90vw;
+    height: 10vh;
+    top: 50vw;
     justify-content: center;
-    
+
     font-family: "Lobster", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 5vh;
     line-height: 25px;
     text-align: center;
-    
+
     color: #f8cca8;
+
+
+}
+
+#musculo{
+    appearance: none;
+    background-color: #ff8d55;
+    border: 2px solid #ffa38c;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 20vh;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#file{
+    appearance: none;
+    background-color: #ff8d55;
+    border: 2px solid #ffa38c;
+    color: white;
+    padding: 10px;
+    font-size: 2vh;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input{
+    /* Rectangle 1 */
     
+    /* box-sizing: border-box; */
+    
+    width: 26vh;
+    height: 2.5vh;
+    top: 10%;
+    bottom: 84.69%;
+    
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px;
     
 }
 
+#dc{
+    
+    width: 16vh;
+    height: 10vh;
+    top: 70vw;
+    justify-content: center;
+
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vh;
+    line-height: 25px;
+    text-align: center;
+
+    color: #f8cca8;
+}

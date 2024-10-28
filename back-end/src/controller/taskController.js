@@ -38,7 +38,7 @@ async function storeTask(request, response) {
 async function Getlogin(request, response) {    
     const email = Array(request.body.email);
 
-    const query = "SELECT name, email, password, funcao FROM users_fitpay WHERE email = ?";
+    const query = "SELECT id, name, email, password, funcao FROM users_fitpay WHERE email = ?";
 
     connection.query(query, email, (err, results) => {    
         console.log("erro", err)

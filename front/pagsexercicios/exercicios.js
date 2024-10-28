@@ -2,9 +2,46 @@ let botao = document.getElementById("buttonsair");
 botao.style.display = "none";
 
 function redirecionar() {
-    window.location.href = "../pag1/pag1.html";
+    console.log("Entrou no redirecionar")
+    //pegarMoedasUsuario();
+    inserirMoedas();
+    //window.location.href = "../pag1/pag1.html";
 }
 
+async function pegarMoedasUsuario(){
+    let idUser = sessionStorage.getItem("idUser")
+    
+    const responseGet = await fetch(`http://localhost:3006/api/moedas/get/${idUser}`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    });
+
+    const result = await responseGet.json();
+    let moedasAtuais = result.data[0].quantia;
+    
+    return moedasAtuais;
+}
+
+async function inserirMoedas() {
+    let data;
+    let idUser = sessionStorage.getItem("idUser")
+
+    let moedas = 10 + Number(await pegarMoedasUsuario());
+
+    data = {idUser,moedas} 
+    console.log(data)
+
+    const response = await fetch('http://localhost:3006/api/moedas', {
+        method: "PUT",
+        headers: {"Content-type": "application/json;charset=UTF-8"},
+        body: JSON.stringify(data)
+    });
+
+    let content = await response.json();
+    console.log(content)
+}
 
 async function getPosts() {
     const images = 'http://localhost:3006/uploads/';

@@ -22,7 +22,12 @@ button.onclick = async function() {
   
     if (result.success) {
       console.log(result.data)
+
       let funcao = result.data[0].funcao;
+      sessionStorage.setItem("idUser", result.data[0].id);
+      let idUser = sessionStorage.getItem("idUser")
+      console.log(idUser)
+
       switch(funcao) {
         case "1":
             window.location.href = "../pag1/pag1.html";
