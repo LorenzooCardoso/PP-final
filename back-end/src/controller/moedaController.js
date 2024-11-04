@@ -60,6 +60,18 @@ async function storeMoedas(request, response) {
         }
     });
 }
+// const db = require('../config/db'); // Certifique-se de que o db está configurado corretamente
+
+// exports.getQuantia = (req, res) => {
+//     const query = 'SELECT quantia FROM moedas LIMIT 1'; // Ajuste conforme necessário
+//     db.query(query, (err, results) => {
+//         if (err) {
+//             console.error('Erro ao buscar quantia:', err);
+//             return res.status(500).json({ error: 'Erro ao buscar quantia' });
+//         }
+//         res.json({ quantia: results[0].quantia });
+//     });
+// };
 
 module.exports = {
     storeMoedas,
