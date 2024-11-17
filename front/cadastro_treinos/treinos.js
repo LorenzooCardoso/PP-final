@@ -12,7 +12,7 @@ button.onclick = async function (event) {
     fm.append('file', document.getElementById("file").files[0]);
     fm.append('musculo', document.getElementById("musculo").value);
 
-    const response = await fetch('http://localhost:3006/api/store/atv', {
+    const response = await fetch('http://localhost:3007/api/store/atv', {
         method: "POST",
         body: fm
     });
@@ -28,9 +28,9 @@ button.onclick = async function (event) {
 }
 
 async function getPosts() {
-    const images = 'http://localhost:3006/uploads/';
+    const images = 'http://localhost:3007/uploads/';
 
-    const response = await fetch('http://localhost:3006/api/posts', {
+    const response = await fetch('http://localhost:3007/api/posts', {
         method: "GET",
         headers: {
             "Content-Type": "application/json"

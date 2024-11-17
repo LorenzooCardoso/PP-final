@@ -1,7 +1,7 @@
 const connection = require('../config/db');
 
-async function getPosts(request, response) {
-    const query = "select * from exercicios;";
+async function getLojas(request, response) {
+    const query = "select * from loja;";
 
     connection.query(query, (err, results) => {
         if(results) {
@@ -24,16 +24,15 @@ async function getPosts(request, response) {
     })
 }
 
-async function storeAtv(request, response) {
+async function storeLoja(request, response) {
  
     const params = Array(
-        request.body.title,
-        request.body.description,
-        request.file.filename,
-        request.body.musculo        
+        request.body.titulo,
+        request.body.descricao,
+        request.body.preco,   
     );
 
-    const query = "INSERT INTO exercicios(title, description, file, musculo) VALUES (?,?,?,?)";
+    const query = "INSERT INTO loja(title, description, preco) VALUES (?,?,?)";
 
     connection.query(query, params, (err, results) =>{
         console.log(err, results);
@@ -58,6 +57,6 @@ async function storeAtv(request, response) {
 }
 
 module.exports = {
-    storeAtv,
-    getPosts
+    storeLoja,
+    getLojas
 }

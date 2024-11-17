@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#title{
+    position: absolute;
+    left: 10vW;
+    right: 10vw;
+    top: 35vh;
+    bottom: 15%;
+    justify-content: center;
+
+    text-align:center;
+    font-size:xx-large;
+    font-family: "Leckerli One", system-ui;
+    font-style: normal;
+
+}
+
+#descricao{
+    position: absolute;
+    left: 10vW;
+    right:10vw;
+    top: 43vh;
+    bottom: 15%;
+    justify-content: center;
+
+    text-align:center;
+    font-size:x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#preco{
+    position: absolute;
+    left: 10vW;
+    right: 10vw;
+    top: 55vh;
+    bottom: 15%;
+    justify-content: center;
+
+    text-align:center;
+    font-size:xx-large;
+    font-family: "Leckerli One", system-ui;
+    font-style: normal;
+}
+
+#P{
+    position: absolute;
+    left: 10vW;
+    right:10vw;
+    top: 50vh;
+    bottom: 15%;
+    justify-content: center;
+
+    text-align:center;
+    font-size:x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.background-box {
+    background-color: #cbcbcb;
+    padding: 20px; 
+    border-radius: 5px;
+    width: 50vw;
+    height: 30vh;
+    top: 10%;
+  }
+
+#Adquirir{
+        /* Component 3 */
+        
+        position: absolute;
+        width: 136px;
+        height: 37px;
+        left: calc(50% - 136px/2);
+        top: 70vh;
+        
+        /* Rectangle 5 */
+        
+        
+        background: rgba(255, 0, 0, 0.34);
+        border-radius: 20px;
+        border-color: rgba(255, 128, 0, 0);
+        /* Criar */
+        
+        
+        font-family: 'Kavoon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+        
+}

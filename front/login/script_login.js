@@ -10,7 +10,7 @@ button.onclick = async function() {
     const data = {email, password}
   
 
-    const response = await fetch("http://localhost:3006/api/login", {
+    const response = await fetch("http://localhost:3007/api/login", {
       method: "POST",
       headers: { "Content-Type":"application/json;charset=UTF-8" },     
       body: JSON.stringify(data)
@@ -36,7 +36,7 @@ button.onclick = async function() {
             window.location.href = "../cadastro_treinos/treinos.html";
             break;
         case "3":
-            window.location.href = "../loja/loja.html ";
+            window.location.href = "../cadastro_ofertas/ofertas.html";
             break;
         default:
             alert("Seleção não encontrada");

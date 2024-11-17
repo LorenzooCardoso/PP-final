@@ -7,7 +7,7 @@ button.onclick = async function() {
     let funcao = document.getElementById("funcao").selectedIndex;
     let data = {name,email,password,funcao}
 console.log(data)
-    const response = await fetch('http://localhost:3006/api/store/task', {
+    const response = await fetch('http://localhost:3007/api/store/task', {
         method: "POST",
         headers: {"Content-type": "application/json;charset=UTF-8"},
         body: JSON.stringify(data)

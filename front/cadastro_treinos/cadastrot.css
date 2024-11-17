@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 
 * {
     margin: 0;
@@ -7,50 +7,64 @@
     box-sizing: border-box;
 }
 
-
-
+body {
+    font-family: 'New Amsterdam', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
 
 #cda {
     font-family: "Leckerli One", cursive;
-    position: absolute;
-    width: 33vh;
-
-    top: 10vw;
-
-    font-family: "Leckerli One", cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 300%;
-    line-height: 30px;
-    text-align: center;
-    justify-content: center;
-
+    font-size: 3em;
     color: #f8cca8;
-
+    margin: 40px 0;
+    text-align: center;
 }
 
-#tt {
-    /* Email: */
-
-    position: absolute;
-    width: 16vh;
-    height: 10vh;
-    top: 50vw;
-    justify-content: center;
-
+.label-text {
     font-family: "Lobster", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 5vh;
-    line-height: 25px;
-    text-align: center;
-
+    font-size: 1.2em;
     color: #f8cca8;
-
-
+    margin: 10px 0;
+    display: block;
+    text-align: center;
 }
 
-#musculo{
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.file-container {
+    margin: 20px 0;
+}
+
+#file {
+    background-color: #ff8d55;
+    border: 2px solid #ffa38c;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#musculo {
     appearance: none;
     background-color: #ff8d55;
     border: 2px solid #ffa38c;
@@ -59,56 +73,22 @@
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 5px;
-    width: 20vh;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-#file{
-    appearance: none;
+button#handleSubmit {
     background-color: #ff8d55;
     border: 2px solid #ffa38c;
     color: white;
-    padding: 10px;
-    font-size: 2vh;
+    padding: 10px 20px;
+    font-size: 1em;
     font-weight: bold;
     border-radius: 5px;
-    width: 300px;
-    text-align: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-input{
-    /* Rectangle 1 */
-    
-    /* box-sizing: border-box; */
-    
-    width: 26vh;
-    height: 2.5vh;
-    top: 10%;
-    bottom: 84.69%;
-    
-    background: #FFFFFF;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    
-}
-
-#dc{
-    
-    width: 16vh;
-    height: 10vh;
-    top: 70vw;
-    justify-content: center;
-
-    font-family: "Lobster", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 5vh;
-    line-height: 25px;
-    text-align: center;
-
-    color: #f8cca8;
 }
